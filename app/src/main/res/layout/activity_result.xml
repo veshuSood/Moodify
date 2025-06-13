@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Displays user's detected mood -->
+        <TextView
+            android:id="@+id/tvMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Mood: Happy 😊"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:paddingBottom="16dp"/>
+
+        <!-- Displays a quote based on the mood -->
+        <TextView
+            android:id="@+id/tvQuote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="“Quote here...”"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"/>
+
+        <!-- Button to play music matching the mood -->
+        <Button
+            android:id="@+id/btnPlayMusic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play Mood Music 🎶" />
+
+        <!-- User can write personal thoughts here -->
+        <EditText
+            android:id="@+id/etNotes"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="Write your thoughts..."
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Button to go back to mood detection -->
+        <Button
+            android:id="@+id/btnDetectAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detect Mood Again 🔄"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
